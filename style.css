@@ -2,8 +2,170 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
   background-color: #fafafa;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+.container {
+  width: 935px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 120px auto 130px;
+}
+
+.hero {
+  height: 590px;
+  flex-basis: 380px;
+  margin-bottom: 12px;
+}
+
+.form {
+  width: 350px;
+  margin-top: 22px;
+}
+
+.form form {
+  height:397px;
+  border: 1px solid rgb(219, 219, 219);
+  background-color: #fff;
+  padding: 1.25rem 2.5rem;
+  text-align: center; 
+  display: flex;
+  flex-direction: column; 
+  margin-bottom: 10px;
+}
+
+form .logo {
+  margin: 30px auto;
+  width: 175px;
+  height: 51px;
+  align-self: center;
+}
+
+form input {
+  width: 100%;
+  height: 36px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #fafafa;
+  margin-bottom: 0.25rem;
+  font-size: 14px;
+  padding: 0 8px;
+}
+
+form input::placeholder {
+  color: #4d4d4d;
+  font-size: 13px;
+}
+
+form button {
+  height: 30px;
+  border: none;
+  background-color: #0195f6;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+form button:disabled {
+  background-color: #b2dffc;
+}
+
+form .separator {
+  color: #8e8e8e;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 16px 0 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form .separator::after, .separator::before {
+  content: '';
+  width: 106px;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+
+form .facebook__link {
+  color: #385185;
+  font-weight: bold;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form .facebook__link img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+form .forgot__password {
+  color: #00376b;
+  font-size: 13px;
+}
+
+.signup {
+  height: 63px;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.signup a {
+  font-weight: bold;
+  color: #0095f6;
+}
+
+.get__app {
+  text-align: center;
+}
+
+.get__app p {
+  font-size: 14px;
+}
+
+.get__app img {
+  width: 136px;
+  margin-top: 20px;
+}
+
+.footer {
+  width: 700px;
+  color: #8e8e8e;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer .links {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  display: inline-block;
+  color: #8e8e8e;
+  margin: 0 3px 10px;
 }

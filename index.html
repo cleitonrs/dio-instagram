@@ -11,32 +11,37 @@
 <body>
   <section class="container">
     <div class="hero">  
+      <img src="./img/instagram-celular2.png" alt="Celular">
     </div>
     <div class="form">
       <form>
-        <img src="./img/instagram-logo.png" alt="Instagram">
+        <img class="logo" src="./img/instagram-logo.png" alt="Instagram">
         <input type="text" name="name" placeholder="Telefone, nome de usuário ou email">
         <input type="password" name="password" placeholder="Senha">
-        <button type="button">Entrar</button>
+        <button type="button" disabled>Entrar</button>
 
         <div class="separator">ou</div>
 
-        <a href="#" class="facebook__link">Entrar com o Facebook</a>
+        <a href="#" class="facebook__link">
+          <span><img src="./img/fb-icon.svg" alt="Logo do facebook"></span>
+          <span>Entrar com o Facebook</span>
+        </a>
         <a href="#" class="forgot__password">Esqueceu a senha?</a>
-
-        <div class="signup">
-          <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
-        </div>
-
-        <div class="get__app">
-          <a href="#">
-            <img src="./img/apple-button.png" alt="Baixar na App Store">
-          </a>
-          <a href="#">
-            <img src="./img/googleplay-button.png" alt="Disponível no Google Play">
-          </a>
-        </div>
       </form>
+
+      <div class="signup">
+        <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+      </div>
+
+      <div class="get__app">
+        <p>Obtenha o aplicativo.</p>
+        <a href="#">
+          <img src="./img/apple-button.png" alt="Baixar na App Store">
+        </a>
+        <a href="#">
+          <img src="./img/googleplay-button.png" alt="Disponível no Google Play">
+        </a>
+      </div>
     </div>
   </section>
 
