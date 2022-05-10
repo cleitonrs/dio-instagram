@@ -30,23 +30,8 @@ body {
   position: absolute;
   top: 25px;
   left: 155px;
-  animation: fade 4s linear reverse infinite; 
 }
 
-@keyframes fade {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: .8
-  }
-  75% {
-    opacity: .5
-  }
-  100% {
-    opacity: .2;
-  }
-}
 
 .form {
   width: 350px;
@@ -176,6 +161,10 @@ form .forgot__password {
   margin: 0 auto;
   text-align: center;
   font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer .links {
@@ -190,4 +179,23 @@ form .forgot__password {
 
 .copy span:nth-child(1) {
   margin-right: 10px;
+}
+
+
+/* Media queries */
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero {
+    display: none;
+  }
+
+  .footer {
+    width: 80%;
+  }
 }
