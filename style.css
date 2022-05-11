@@ -81,10 +81,12 @@ form button {
   font-size: 14px;
   font-weight: bold;
   margin-top: 12px;
+  cursor: pointer;
 }
 
 form button:disabled {
   background-color: #b2dffc;
+  cursor: initial;
 }
 
 form .separator {
